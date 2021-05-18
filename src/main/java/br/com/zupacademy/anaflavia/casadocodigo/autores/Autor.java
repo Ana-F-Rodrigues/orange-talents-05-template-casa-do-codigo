@@ -50,7 +50,7 @@ public class Autor {
 		this.nome = nome;
 		this.email = email;
 		this.descricao = descricao;
-		this.dataCriacao = OffsetDateTime.now();
+		this.dataCriacao = dataCriacao;
 
 	}
 
