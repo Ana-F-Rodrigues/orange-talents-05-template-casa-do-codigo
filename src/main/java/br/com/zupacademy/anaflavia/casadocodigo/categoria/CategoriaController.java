@@ -1,4 +1,4 @@
-package br.com.zupacademy.anaflavia.casadocodigo.autores;
+package br.com.zupacademy.anaflavia.casadocodigo.categoria;
 
 import javax.validation.Valid;
 
@@ -36,7 +36,7 @@ public class CategoriaController {
 	@PostMapping
 	public ResponseEntity<CategoriaDto> Cadastrar (@RequestBody @Valid CategoriaDto categoriaDto) {
 		
-		Categoria categoria = categoriaDto.converterCategoria(categoriaDto);
+		Categoria categoria = categoriaDto.converter();
 		categoria = categoriaRepository.save(categoria);
 		return ResponseEntity.ok().body(categoriaDto);
 }

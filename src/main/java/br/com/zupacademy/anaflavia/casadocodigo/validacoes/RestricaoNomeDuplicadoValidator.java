@@ -7,9 +7,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
-import br.com.zupacademy.anaflavia.casadocodigo.autores.Categoria;
-import br.com.zupacademy.anaflavia.casadocodigo.autores.CategoriaRepository;
 import br.com.zupacademy.anaflavia.casadocodigo.autores.dto.CategoriaDto;
+import br.com.zupacademy.anaflavia.casadocodigo.categoria.Categoria;
+import br.com.zupacademy.anaflavia.casadocodigo.categoria.CategoriaRepository;
 
 @Component
 public class RestricaoNomeDuplicadoValidator implements Validator {

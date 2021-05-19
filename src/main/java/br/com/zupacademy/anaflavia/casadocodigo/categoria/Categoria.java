@@ -1,4 +1,4 @@
-package br.com.zupacademy.anaflavia.casadocodigo.autores;
+package br.com.zupacademy.anaflavia.casadocodigo.categoria;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
