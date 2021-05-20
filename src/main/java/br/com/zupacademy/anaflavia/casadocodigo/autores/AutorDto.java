@@ -1,4 +1,4 @@
-package br.com.zupacademy.anaflavia.casadocodigo.autores.dto;
+package br.com.zupacademy.anaflavia.casadocodigo.autores;
 
 import java.time.OffsetDateTime;
 
@@ -7,8 +7,6 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
-
-import br.com.zupacademy.anaflavia.casadocodigo.autores.Autor;
 
 public class  AutorDto {
 

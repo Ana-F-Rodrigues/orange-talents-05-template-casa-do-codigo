@@ -8,8 +8,8 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
 import br.com.zupacademy.anaflavia.casadocodigo.autores.Autor;
+import br.com.zupacademy.anaflavia.casadocodigo.autores.AutorDto;
 import br.com.zupacademy.anaflavia.casadocodigo.autores.AutorRepository;
-import br.com.zupacademy.anaflavia.casadocodigo.autores.dto.AutorDto;
 
 @Component
 public class RestricaoEmailDuplicadoValidator implements Validator {

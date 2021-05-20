@@ -1,8 +1,7 @@
-package br.com.zupacademy.anaflavia.casadocodigo.autores.dto;
+package br.com.zupacademy.anaflavia.casadocodigo.categoria;
 
 import javax.validation.constraints.NotBlank;
 
-import br.com.zupacademy.anaflavia.casadocodigo.categoria.Categoria;
 import br.com.zupacademy.anaflavia.casadocodigo.validacoes.UniqueValue;
 
 public class CategoriaDto {
