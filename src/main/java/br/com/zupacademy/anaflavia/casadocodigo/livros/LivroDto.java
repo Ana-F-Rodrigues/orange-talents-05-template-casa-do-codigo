@@ -9,12 +9,15 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import org.hibernate.validator.constraints.ISBN;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import br.com.zupacademy.anaflavia.casadocodigo.autores.Autor;
 import br.com.zupacademy.anaflavia.casadocodigo.autores.AutorRepository;
 import br.com.zupacademy.anaflavia.casadocodigo.categoria.Categoria;
 import br.com.zupacademy.anaflavia.casadocodigo.categoria.CategoriaRepository;
+import br.com.zupacademy.anaflavia.casadocodigo.validacoes.ExisteId;
 import br.com.zupacademy.anaflavia.casadocodigo.validacoes.UniqueValue;
 
 public class LivroDto {
@@ -34,7 +37,9 @@ public class LivroDto {
 
 	@Min(100)
 	private Integer numeroPaginas;
-
+    
+	@NotBlank
+//	@ISBN
 	@UniqueValue(domainClass = Livro.class, fieldName = "ISBN", message = "O ISBN informado já existe")
 	private String isbn;
 
@@ -42,8 +47,10 @@ public class LivroDto {
 	@JsonFormat(pattern = "dd/MM/yyyy", shape = JsonFormat.Shape.STRING)
 	private LocalDate dataPublicacao;
 
+	@ExisteId(domainClass= Categoria.class, fieldName="id")
 	private Long categoria;
 
+	@ExisteId(domainClass= Autor.class, fieldName="id")
 	private Long autor;
 	
 

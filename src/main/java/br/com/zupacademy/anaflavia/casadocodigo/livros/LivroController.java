@@ -19,22 +19,7 @@ import br.com.zupacademy.anaflavia.casadocodigo.validacoes.RestricaoNomeDuplicad
 @RequestMapping("/livros")
 public class LivroController {
 	
-	
 
-	@Autowired
-	private RestricaoNomeDuplicadoValidator restricaoLivroValidator;
-	
-
-	@InitBinder
-	public void init(WebDataBinder binder) {
-		
-		binder.addValidators(restricaoLivroValidator);
-		
-		
-      }
-	
-	
-	
 	@Autowired
 	private LivroRepository livroRepository;
 	@Autowired
