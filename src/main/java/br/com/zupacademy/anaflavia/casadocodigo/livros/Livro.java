@@ -60,6 +60,20 @@ public class Livro {
 		
 	}
 	
+	
+	
+	public Long getId() {
+		return id;
+	}
+
+
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+
+
 	public Livro(String titulo, String resumo, String sumario, BigDecimal preco, Integer numeroPaginas,
 			String isbn,LocalDate dataPublicacao, Autor autor, Categoria categoria) {
 		this.titulo = titulo;
