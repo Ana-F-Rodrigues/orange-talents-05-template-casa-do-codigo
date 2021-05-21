@@ -37,4 +37,8 @@ public class Estado {
 	                '}';
 	    }
 
+		public Long getId() {
+			return id;
+		}
+
 }
